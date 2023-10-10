@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+@import "/css/variables.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Josefin-ff);
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+/* Header Start */
+header {
+  background: url(/assets/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+}
+
+.hamburger img {
+  cursor: pointer;
+}
+
+/* Position both logo and hamburger icon in center of header */
+.main-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.overlay-logo {
+  padding-top: 1.25rem;
+}
+
+.nav-links-desktop {
+  display: none;
+}
+/* overlay section for displaying mobile nav when hamburger button is clicked */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--Black);
+  display: none;
+}
+
+.overlay-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 1.5rem;
+}
+
+.close-btn {
+  width: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  transform: rotate(35deg);
+} /* rotates close btn on hover */
+
+.overlay ul {
+  position: absolute;
+  left: 2.15rem;
+  top: 15rem;
+  bottom: 15rem;
+  font-weight: 300;
+}
+
+.overlay ul li {
+  padding: 2.25rem 3rem 0 0;
+}
+.overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.overlay ul li a:hover {
+  color: var(--Dark-Gray);
+}
+/* Transition bottom border of links from left to right TBC  */
+
+/* Header End */
+
+/* Hero Start */
+
+.hero {
+  min-width: 100%;
+  min-height: fit-content;
+  display: flex;
+  padding: 10rem 2rem 20rem 5rem;
+}
+
+.hero p {
+  text-transform: uppercase;
+  border: 4px solid var(--White);
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  line-height: 1;
+  padding: 2.5rem;
+  margin: 5rem 4.5rem 5rem 0;
+  color: var(--White);
+  font-family: var(--Alata);
+  font-size: 4.75rem;
+  font-weight: 300;
+}
+
+/* Hero End */
+
+/* Showcase Start */
+
+.showcase {
+  text-align: center;
+}
+
+.showcase img {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.showcase h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: var(--Black);
+}
+
+.showcase p {
+  font-size: 1.75rem;
+  font-family: var(--Alata-ff);
+  justify-content: center;
+  padding: 3rem;
+  line-height: 2;
+  font-weight: 400;
+  color: var(--Dark-Gray);
+}
+
+/* Showcase End */
+
+/* Creations Start */
+.mobile-creations-section {
+  min-width: 100%;
+  padding: 5rem 2rem;
+  text-transform: uppercase;
+  border: 2px solid red;
+}
+
+.desktop-creations-section {
+  display: none;
+}
+
+.mobile-creations-section h1 {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.pics-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.pics-container h3 {
+  position: absolute;
+  color: var(--White);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3rem;
+  z-index: 1;
+  top: 50%;
+  left: 2rem;
+}
+
+.pics-container img {
+  padding: 1.5rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.btn-wrapper {
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-wrapper button {
+  color: var(--Black);
+  text-transform: uppercase;
+  padding: 1.25rem 4.75rem;
+  background: var(--White);
+  letter-spacing: 0.5rem;
+  font-family: var(--Alata-ff);
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.75s ease-in-out;
+}
+
+.btn-wrapper button:hover {
+  color: var(--White);
+  background: var(--Black);
+}
+
+/* Creations End */
+
+/* Footer Start */
+
+footer {
+  min-height: fit-content;
+  min-width: 100%;
+  background: var(--Black);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  font-family: var(--Alata-ff);
+  font-weight: 300;
+  font-size: 1.15rem;
+  color: var(--Dark-Gray);
+}
+
+.footer-wrapper ul {
+  font-size: 1.75rem;
+  margin: 3.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.footer-wrapper ul li {
+  padding: 1.25rem;
+}
+
+.footer-wrapper ul li a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.socials img {
+  width: 4rem;
+  padding: 0.75rem;
+}
+
+footer p {
+  letter-spacing: 0.15rem;
+  padding-top: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Footer End */
+
+/* layout for desktop screen */
+@media only screen and (min-width: 900px) {
+  /* Main Nav Menu Start */
+
+  header {
+    padding: 3.5rem 0 0 0.75rem;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav-wrapper {
+    padding-left: 5rem;
+    padding-right: 8rem;
+    border: solid 2px blue;
+  }
+
+  .nav-links-desktop {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .nav-links-desktop li {
+    list-style: none;
+  }
+
+  .nav-links-desktop a {
+    position: relative;
+    color: var(--White);
+    text-decoration: none;
+    border-bottom: solid 2px #fff;
+    transition: 0 0.5s linear;
+  }
+
+  .nav-links-desktop a::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+  }
+  .nav-links-desktop a:hover {
+    transition: 100% 0.5s linear;
+  }
+
+  /* Main Nav Menu End */
+
+  /* Hero Start */
+  section > .hero {
+    padding-top: 2rem;
+    padding-right: 25rem;
+  }
+
+  /* Hero End */
+  /* Showcase Start */
+  /* Showcase End */
+  /* Creations Start */
+
+  /* Creations End */
+
+  .mobile-creations-section {
+    display: none;
+  }
+  .pics-container {
+    background-image: url(../assets/images/desktop/image-deep-earth.jpg)
+      no-repeat;
+  }
+}
