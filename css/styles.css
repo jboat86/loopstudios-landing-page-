@@ -335,6 +335,11 @@ footer p {
   .mobile-creations-section {
     display: none;
   }
+
+  .desktop-creations-section {
+    display: flex;
+    flex-direction: row;
+  }
   .pics-container {
     background-image: url(../assets/images/desktop/image-deep-earth.jpg)
       no-repeat;
