@@ -19,7 +19,7 @@ header {
   background: url(/assets/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .hamburger img {
@@ -108,8 +108,6 @@ header {
 .hero p {
   text-transform: uppercase;
   border: 4px solid var(--White);
-  margin-top: 5rem;
-  margin-bottom: 10rem;
   line-height: 1;
   padding: 2.5rem;
   margin: 5rem 4.5rem 5rem 0;
@@ -124,17 +122,22 @@ header {
 /* Showcase Start */
 
 .showcase {
-  text-align: center;
+  padding: 4rem 2rem;
 }
 
 .showcase img {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  padding: 5rem 3rem;
+}
+
+.desktop-showcase-text {
+  justify-items: center;
+  padding: 4rem 2rem;
 }
 
 .showcase h1 {
   margin-bottom: 0.5rem;
   font-weight: 300;
+  justify-self: center;
   font-size: 3.75rem;
   text-transform: uppercase;
   color: var(--Black);
@@ -143,8 +146,6 @@ header {
 .showcase p {
   font-size: 1.75rem;
   font-family: var(--Alata-ff);
-  justify-content: center;
-  padding: 3rem;
   line-height: 2;
   font-weight: 400;
   color: var(--Dark-Gray);
@@ -155,9 +156,8 @@ header {
 /* Creations Start */
 .mobile-creations-section {
   min-width: 100%;
-  padding: 5rem 2rem;
+  padding: 3.5rem 2rem 10rem 5rem;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 .desktop-creations-section {
@@ -193,14 +193,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .btn-wrapper {
   margin-top: 3rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.btn-wrapper button {
   color: var(--Black);
   text-transform: uppercase;
   padding: 1.25rem 4.75rem;
@@ -279,15 +277,21 @@ footer p {
   /* Main Nav Menu Start */
 
   header {
-    padding: 3.5rem 0 0 0.75rem;
+    padding: 2rem 3.5rem;
+    background-image: url(/assets/images/desktop/image-hero.jpg);
+    height: fit-content;
   }
+
   .hamburger {
     display: none;
   }
 
   .main-nav-wrapper {
     padding-left: 5rem;
-    padding-right: 8rem;
+  }
+
+  .logo {
+    padding-top: 2rem;
   }
 
   .nav-links-desktop {
@@ -320,13 +324,38 @@ footer p {
   /* Main Nav Menu End */
 
   /* Hero Start */
-  section > .hero {
-    padding-top: 2rem;
-    padding-right: 25rem;
+  .hero {
+    padding: 2.5rem 5rem;
+  }
+  .hero p {
+    padding: 2.15rem 6.5rem 2.15rem 2rem;
+    font-size: 3.75rem;
   }
 
   /* Hero End */
   /* Showcase Start */
+  .showcase {
+    display: flex;
+    padding: 5.25rem;
+    border: 2px solid red;
+  }
+
+  .desktop-showcase-text {
+    text-align: start;
+    border: 2px solid olive;
+    /* padding-top: 3rem; */
+    justify-items: flex-start;
+  }
+
+  .desktop-showcase-text h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .desktop-showcase-text p {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
   /* Showcase End */
   /* Creations Start */
 
@@ -339,6 +368,7 @@ footer p {
   .desktop-creations-section {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
   }
   .pics-container {
     background-image: url(../assets/images/desktop/image-deep-earth.jpg)
