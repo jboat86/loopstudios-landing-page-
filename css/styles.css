@@ -19,7 +19,6 @@ header {
   background: url(/assets/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
 }
 
 .hamburger img {
@@ -31,7 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 2.5rem 0 2.5rem;
 }
 
 .overlay-logo {
@@ -99,21 +98,20 @@ header {
 /* Hero Start */
 
 .hero {
-  min-width: 100%;
-  min-height: fit-content;
+  min-width: fit-content;
   display: flex;
-  padding: 10rem 2rem 20rem 5rem;
+  padding: 5rem 2rem;
 }
 
 .hero p {
   text-transform: uppercase;
   border: 4px solid var(--White);
   line-height: 1;
-  padding: 2.5rem;
-  margin: 5rem 4.5rem 5rem 0;
+  padding: 1.75rem;
+  margin: 5rem 4.5rem 10rem 0;
   color: var(--White);
   font-family: var(--Alata);
-  font-size: 4.75rem;
+  font-size: 3.75rem;
   font-weight: 300;
 }
 
@@ -123,10 +121,13 @@ header {
 
 .showcase {
   padding: 4rem 2rem;
+  border: 2px solid blue;
+  margin: auto;
+  justify-content: center;
 }
 
-.showcase img {
-  padding: 5rem 3rem;
+img .showcase-img {
+  padding: 6rem 2rem 5rem 2rem;
 }
 
 .desktop-showcase-text {
@@ -144,6 +145,7 @@ header {
 }
 
 .showcase p {
+  justify-self: center;
   font-size: 1.75rem;
   font-family: var(--Alata-ff);
   line-height: 2;
@@ -154,27 +156,27 @@ header {
 /* Showcase End */
 
 /* Creations Start */
-.mobile-creations-section {
-  min-width: 100%;
-  padding: 3.5rem 2rem 10rem 5rem;
+.mobile-creations {
+  padding: 5rem 2.5rem 15rem 2.5rem;
   text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.desktop-creations-section {
+.mobile-creations {
   display: none;
 }
 
-.mobile-creations-section h1 {
+.mobile-creations h1 {
   text-align: center;
   font-size: 3.75rem;
   font-weight: 300;
-  margin-bottom: 2.5rem;
+  padding-bottom: 5rem;
 }
 
 .pics-container {
   position: relative;
-  justify-content: center;
-  align-items: center;
 }
 
 .pics-container h3 {
@@ -188,7 +190,7 @@ header {
   left: 2rem;
 }
 
-.pics-container img {
+.mobile-img {
   padding: 1.5rem 0;
   justify-content: center;
   align-items: center;
@@ -205,6 +207,7 @@ header {
   background: var(--White);
   letter-spacing: 0.5rem;
   font-family: var(--Alata-ff);
+  font-size: 1.75rem;
   border: 2px solid black;
   cursor: pointer;
   transition: 0.75s ease-in-out;
@@ -220,8 +223,6 @@ header {
 /* Footer Start */
 
 footer {
-  min-height: fit-content;
-  min-width: 100%;
   background: var(--Black);
 }
 
